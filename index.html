@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mujeres en la Computación</title>
+    <link rel="icon" href="images/icono.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    
+</head>
+    
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mujeres en la Computación</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+            </svg>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pioneras">Pioneras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#impacto">Impacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#juego">Trivia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Sección Hero -->
+    <header id="inicio" class="hero d-flex align-items-center">
+        <div class="container text-center text-light">
+            <h1>Mujeres en la Computación</h1>
+            <p class="lead" >Descubre a las pioneras que cambiaron la historia de la informática</p>
+            <a href="#pioneras" class="btn btn-light">Conócelas</a>
+        </div>
+    </header>
+
+    <!-- Sección Pioneras -->
+    <section id="pioneras" class="container py-5">
+        <h2 class="text-center mb-4">Pioneras de la Computación</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/ada.jpg" class="card-img-top" alt="Ada Lovelace">
+                    <div class="card-body">
+                        <h5 class="card-title">Ada Lovelace</h5>
+                        <p class="card-text">Creó el primer algoritmo de la historia en 1843.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/grace.jpg" class="card-img-top" alt="Grace Hopper">
+                    <div class="card-body">
+                        <h5 class="card-title">Grace Hopper</h5>
+                        <p class="card-text">Desarrolló el primer compilador y creó el lenguaje COBOL.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/margaret.jpg" class="card-img-top" alt="Margaret Hamilton">
+                    <div class="card-body">
+                        <h5 class="card-title">Margaret Hamilton</h5>
+                        <p class="card-text">Lideró el desarrollo del software del Apolo 11.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Trivia -->
+    <section id="juego" class="bg-dark py-5 text-center">
+        <h2>Trivia: ¿Cuánto sabes sobre mujeres en la computación?</h2>
+        <p class="text-success">Responde correctamente a la siguiente pregunta:</p>
+        <p id="pregunta">¿Quién desarrolló el lenguaje COBOL?</p>
+        <button class="btn btn-success" onclick="verificarRespuesta('Ada Lovelace')">Ada Lovelace</button>
+        <button class="btn btn-success" onclick="verificarRespuesta('Grace Hopper')">Grace Hopper</button>
+        <button class="btn btn-success" onclick="verificarRespuesta('Margaret Hamilton')">Margaret Hamilton</button>
+        <p id="respuesta" class="mt-3"></p>
+    </section>
+
+    <!-- Impacto en la Computación -->
+    <section id="impacto" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Impacto en la Informática</h2>
+            <img src="images/img2.jpeg" class="imgImpacto" alt="">
+            <p class="text-justify">Las mujeres han jugado un papel clave en el desarrollo de la computación desde sus inicios y continúan dejando una huella profunda en el mundo de la informática. Hoy en día, su presencia en el sector tecnológico es más relevante que nunca, con ingenieras, científicas de datos, desarrolladoras de software y especialistas en ciberseguridad liderando avances innovadores en todo el mundo.</p>
+            <p class="text-justify">A pesar de los desafíos históricos y las brechas de género que aún persisten, cada vez más mujeres ingresan a carreras STEM (Ciencia, Tecnología, Ingeniería y Matemáticas), contribuyendo a la creación de nuevas tecnologías, inteligencia artificial, criptografía y desarrollo de software. Empresas y organizaciones globales trabajan activamente para fomentar la diversidad en la industria, promoviendo la inclusión de mujeres en roles de liderazgo y toma de decisiones.</p>
+            <h3 class="lead">Mujeres Líderes en Tecnología Hoy</h3>
+            <ul>
+                <li>Sheryl Sandberg – Ex directora de operaciones de Facebook (Meta), ha sido una de las mujeres más influyentes en la industria tecnológica, promoviendo la equidad de género en el sector.</li>
+                <li>Reshma Saujani – Fundadora de Girls Who Code, una organización que fomenta la participación de niñas y mujeres jóvenes en la programación y la tecnología.</li>
+                <li>Fei-Fei Li – Científica en inteligencia artificial y cofundadora del AI4ALL, una iniciativa para diversificar la IA y hacerla más inclusiva.</li>
+                <li>Gwynne Shotwell – Presidenta y COO de SpaceX, desempeñando un papel clave en la innovación y el desarrollo de tecnología aeroespacial.</li>
+                <li>Radia Perlman – Conocida como la "Madre de Internet", fue la creadora del protocolo STP (Spanning Tree Protocol), fundamental en el desarrollo de redes modernas.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Sección Contacto -->
+    <section id="contacto" class="container py-5">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+        </form>
+    </section>
+
+
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2025 Mujeres en la Computación</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
